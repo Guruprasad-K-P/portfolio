@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Guruprasad K P — Software Developer</title>
-<meta name="description" content="Portfolio of Guruprasad K P, Computer Science and Engineering student specializing in Java development and MySQL." />
+<title>Guruprasad K P — Java Developer</title>
+<meta name="description" content="Portfolio of Guruprasad K P, Computer Science undergraduate specializing in Java, OOP and MySQL." />
+<meta property="og:title" content="Guruprasad K P — Java Developer" />
+<meta property="og:description" content="Java, OOP and MySQL projects by Guruprasad K P." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#faf8f4" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,195 +16,67 @@
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
+  <a class="skip" href="#work">Skip to projects</a>
+
   <header class="nav">
-    <a href="#top" class="nav-mark">GKP</a>
-    <nav class="nav-links">
+    <a href="#top" class="nav-mark" aria-label="Home">GKP</a>
+    <nav class="nav-links" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#background">Background</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="nav-cta">Say hello</a>
+    <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode">◐</button>
   </header>
 
-  <!-- ============ HERO ============ -->
-  <section id="top" class="hero">
-    <p class="hero-eyebrow">Computer Science &amp; Engineering Student</p>
-    <h1 class="hero-name">Guruprasad K P</h1>
-    <p class="hero-line">
-      I build software the way I'd want to find it later — readable, modular,
-      and easy to change. Currently focused on Java, MySQL, and the habits
-      that keep a codebase calm as it grows.
-    </p>
-    <div class="hero-actions">
-      <a href="#work" class="btn btn-primary">See my work</a>
-      <a href="mailto:guruprasad.kp.tech@gmail.com" class="btn btn-ghost">guruprasad.kp.tech@gmail.com</a>
-    </div>
-    <div class="hero-meta">
-      <span>Balugodu Village, Sullia Taluk · Dakshina Kannada, Karnataka</span>
-    </div>
-  </section>
+  <main>
+    <section id="top" class="hero"></section>
 
-  <!-- ============ WORK ============ -->
-  <section id="work" class="section">
-    <div class="section-head">
-      <span class="section-num">01</span>
-      <h2>Selected Work</h2>
-    </div>
+    <section id="work" class="section">
+      <div class="section-head"><span class="section-num">01</span><h2>Selected Work</h2></div>
+      <div id="filters" class="filters" role="group" aria-label="Filter projects"></div>
+      <div id="projects" class="grid"></div>
+    </section>
 
-    <div class="project-list">
+    <section id="about" class="section">
+      <div class="section-head"><span class="section-num">02</span><h2>About</h2></div>
+      <div id="about-text" class="about"></div>
+    </section>
 
-      <!-- PROJECT 1 -->
-      <article class="project">
-        <div class="project-info">
-          <h3 class="project-title">Healthcare Camp Tracker</h3>
-          <p class="project-desc">
-            A digital platform that replaces manual paperwork at rural health
-            camps — managing patient registration, medical records, and staff
-            details in one place. Includes bilingual (Kannada &amp; English) support
-            and a GPS-based location tracker for real-time camp monitoring and
-            improved coordination between doctors, volunteers, and organizers.
-          </p>
-          <ul class="project-stack">
-            <li>HTML/CSS/JS</li>
-            <li>MySQL</li>
-            <li>GPS API</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">View code →</a>
-        </div>
-      </article>
+    <section id="skills" class="section">
+      <div class="section-head"><span class="section-num">03</span><h2>Skills</h2></div>
+      <div id="skills-grid" class="skills-grid"></div>
+      <p id="learning" class="skills-note"></p>
+    </section>
 
-      <!-- PROJECT 2 -->
-      <article class="project">
-        <div class="project-info">
-          <h3 class="project-title">AI-Based Decision-Support System for Crime Investigation</h3>
-          <p class="project-desc">
-            An NLP-driven tool that helps investigators cut through large
-            volumes of case documents and suspect profiles. Uses TF-IDF and
-            cosine similarity to score and rank suspects by evidence relevance,
-            with explainable output so investigators understand the reasoning
-            behind every ranking — human judgment stays in the loop throughout.
-          </p>
-          <ul class="project-stack">
-            <li>Python</li>
-            <li>NLTK / spaCy / Scikit-learn</li>
-            <li>Flask</li>
-            <li>SQLite / MySQL</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="#" class="https://github.com/Guruprasad-K-P/PBL-Project">View code →</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 3 — replace the placeholder text inside each [[ ]] when ready -->
-      <article class="project">
-        <div class="project-info">
-          <h3 class="project-title">[[ Project Three Name ]]</h3>
-          <p class="project-desc">
-            [[ One or two lines describing what this project does and the
-            problem it solves. ]]
-          </p>
-          <ul class="project-stack">
-            <li>[[ Tech 1 ]]</li>
-            <li>[[ Tech 2 ]]</li>
-            <li>[[ Tech 3 ]]</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">View code →</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section">
-    <div class="section-head">
-      <span class="section-num">02</span>
-      <h2>About</h2>
-    </div>
-    <div class="about-grid">
-      <p class="about-text">
-        I'm a Computer Science and Engineering student with a steady interest
-        in Java development and MySQL. I enjoy building practical software
-        projects, solving real-world problems, and continuously learning
-        modern technologies — right now that means getting comfortable with
-        DevOps, Docker, Kubernetes, and cloud computing.
-      </p>
-      <p class="about-text">
-        When I design something, I think about the version of me who has to
-        debug it six months from now: clear structure, sensible names,
-        and pieces that can scale or change without a rewrite.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section id="skills" class="section">
-    <div class="section-head">
-      <span class="section-num">03</span>
-      <h2>Skills</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4>Languages</h4>
-        <p>Python, Java, C</p>
+    <section id="background" class="section">
+      <div class="section-head"><span class="section-num">04</span><h2>Background</h2></div>
+      <div class="two-col">
+        <div><h3 class="sub">Education</h3><ul id="education" class="timeline"></ul></div>
+        <div><h3 class="sub">Certifications</h3><ul id="certs" class="timeline"></ul></div>
       </div>
-      <div class="skill-group">
-        <h4>Web</h4>
-        <p>HTML5, CSS3, JavaScript, Responsive Design</p>
-      </div>
-      <div class="skill-group">
-        <h4>Database</h4>
-        <p>MySQL</p>
-      </div>
-      <div class="skill-group">
-        <h4>Core CS</h4>
-        <p>OOP, Data Structures &amp; Algorithms, Operating Systems, Computer Networks</p>
-      </div>
-      <div class="skill-group">
-        <h4>Tools</h4>
-        <p>Git, GitHub, VS Code, Linux Basics</p>
-      </div>
-      <div class="skill-group">
-        <h4>Currently Learning</h4>
-        <p>DevOps, Docker, Kubernetes, Cloud Computing</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section id="contact" class="section contact">
-    <div class="section-head">
-      <span class="section-num">04</span>
-      <h2>Contact</h2>
-    </div>
-    <p class="contact-line">
-      Open to entry-level software development roles. The fastest way to
-      reach me is email.
-    </p>
-    <a href="mailto:guruprasad.kp.tech@gmail.com" class="contact-email">guruprasad.kp.tech@gmail.com</a>
-
-    <div class="contact-socials">
-      <a href="https://github.com/Guruprasad-K-P" target="_blank" rel="noopener">GitHub →</a>
-      <a href="https://www.linkedin.com/in/guruprasad-k-p-745772296" target="_blank" rel="noopener">LinkedIn →</a>
-    </div>
-  </section>
+    <section id="contact" class="section">
+      <div class="section-head"><span class="section-num">05</span><h2>Contact</h2></div>
+      <p class="contact-line">Open to entry-level software development roles and internships. The fastest way to reach me is email.</p>
+      <a id="contact-email" class="contact-email"></a>
+      <div id="contact-socials" class="contact-socials"></div>
+    </section>
+  </main>
 
   <footer class="footer">
     <span>© <span id="year"></span> Guruprasad K P</span>
-    <span>Built with HTML &amp; CSS</span>
+    <span>Plain HTML, CSS &amp; JS</span>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Project detail dialog (filled by script.js) -->
+  <dialog id="modal" class="modal" aria-labelledby="modal-title"></dialog>
 
+  <noscript><p class="noscript">This portfolio needs JavaScript enabled. Email: guruprasad.kp.tech@gmail.com</p></noscript>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
